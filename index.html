@@ -19,16 +19,55 @@
     </header>
     <main>
        <section id="perinfo" >
+        <div class="photo">
+          <img src="photo.jpg" alt="Votre photo d'identité">
+        </div>
         <h2>Personal Information</h2>
         <!-- Add your personal information here -->
-        <p>Name: John Doe</p>
-        <p>Address: 123 Main Street, Anytown, USA 12345</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Email: john.doe@example.com</p>
+        <p> <strong>Full name: </strong> Battou Karim </p>
+        <p> <strong>Adresse: </strong> Cité Merdjachakir Bt 15 Medea </p>
+        <p> <strong>Phone number: </strong>(+213) 793-63-69-40</p>
+        <p><strong>Email :</strong> karim.battou20@gmail.com </p>
       </section>
       <section id="about">
         <h2>About</h2>
-        <p>I am a seasoned web developer with a passion for creating elegant and functional websites.</p>
+        <p id="paragraph">
+          As a computer science graduate with a Master 2 level specialization in System Engineering and Web Technology, I have a strong foundation in programming, machine learning, and web development. My academic background has equipped me with the technical skills and knowledge necessary to solve complex programming problems and develop high-quality web applications.
+
+          Throughout my studies, I gained hands-on experience building a variety of projects, from simple web pages to complex machine learning models. I am proficient in several programming languages, including Python, JavaScript, and Java, and I have a deep understanding of software development best practices and methodologies.
+
+          I am confident in my ability to contribute to projects and bring value to any organization that I work with. My passion for technology, combined with my education and experience, makes me a strong candidate for a career in the tech industry. I look forward to leveraging my skills and knowledge to create innovative and impactful solutions for my future clients and employers.
+        </p>
+
+        <button id="toggleButton">Toggle Paragraph</button>
+
+        <style>
+          #paragraph {
+            margin-bottom: 20px;
+          }
+          #toggleButton {
+              background-color: #333;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+        </style>
+
+        <script>
+          const paragraph = document.getElementById("paragraph");
+          const toggleButton = document.getElementById("toggleButton");
+
+          toggleButton.addEventListener("click", function() {
+            if (paragraph.style.display === "none") {
+              paragraph.style.display = "block";
+            } else {
+              paragraph.style.display = "none";
+            }
+          });
+        </script>
+
       </section>
       <section id="projects">
         <h2>Projects</h2>
